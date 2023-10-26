@@ -1,0 +1,545 @@
+/* Styles Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #961414;
+    border-radius: 2px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #F5F5F5;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.head {
+    background: #9E050B;
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+
+.imagesHeader {
+    display: inline-block;
+    padding: 8px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+    height: 15vh;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav .logo-navbar {
+    margin-right: 1rem;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #070707;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.containerLinks ul {
+    display: flex;
+    list-style: none;
+}
+
+.container ul li {
+    display: flex;
+}
+
+.containerLinks ul li a {
+    display: inline-block;
+    color: black;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+
+.containerLinks a:hover {
+    border-bottom: 1px solid #9E050B;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 5px;
+    background: #CDC5C575;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: none;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('./assents/icone-lupa.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -30px;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Section 1  - Banner inicial */
+
+.section1-conteudo {
+    text-align: center;
+}
+
+.section1 {
+    background-image: url('assents/banner01.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section1-titulo {
+    padding-top: 2.5em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #9E050B;
+}
+
+.section1-paragrafo {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 15px;
+    max-width: 37.5em;
+    line-height: 19.5px;
+    letter-spacing: 1.5px;
+}
+
+.section1-botao {
+    display: inline-block;
+    padding: .5em 3em;
+    margin-top: 1em;
+    background-color: #E8111A;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3em;
+}
+
+.section1-botao:hover {
+    background-color: #e0dddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #E8111A;
+}
+
+/* container das comidas mais procuradas */
+
+.areaSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    background-color: #E2D8D8;
+
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #AB8E8E;
+    width: 400px;
+    height: 150px;
+}
+
+.image {
+    max-width: 50%;
+    height: 150px;
+}
+
+article figure {
+    display: flex;
+}
+
+article figure .descricao {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+}
+
+/* Restaurantes */
+
+.icones-restaurantes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1.5em;
+}
+
+.icones-restaurantes img {
+    padding: 1.5em;
+    width: 12em;
+}
+
+.ver-mais a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #000;
+
+    margin-bottom: 1em;
+    margin-right: 2em;
+
+    display: flex;
+    justify-content: end;
+}
+
+/* Section 4 - Cupons */
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .cupons .buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cupons {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cupom-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 200px;
+    height: 60px;
+    background-color: #d8323b;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #e0dddd;
+    margin-bottom: 3em;
+    border: none;
+    cursor: pointer;
+}
+
+.cupom-botao:hover {
+    font-weight: 500;
+    background-color: #E8111A;
+    color: #ffffff;
+}
+
+/* Section 5 */
+
+.section5 {
+    background-image: url('assents/banner02.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section2-titulo,
+.section3-titulo,
+.section4-titulo,
+.section5-titulo {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 15px;
+    /* max-width: 37.5em; */
+    color: #9E050B;
+}
+
+.section5 input,
+.section5 textarea {
+    background-color: #ebeaea;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(168, 70, 70);
+}
+
+.section5 input {
+    padding: 0.5rem;
+}
+
+.section5-botao {
+    display: inline-block;
+    padding: .5em 3em;
+    margin-top: 1em;
+    background-color: #d8323b;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #e0dddd;
+    margin-bottom: 3em;
+}
+
+.section5-botao:hover {
+    background-color: #E8111A;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+::placeholder {
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: #9E050B;
+    padding: 1.2rem;
+}
+
+footer .direitosReservados {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+footer .direitosReservados h6 {
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+footer .termos {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+footer .termos a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer .contatos {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsividade da Navbar */
+
+@media(max-width: 763px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerLinks{
+        color: white;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 23vh;
+        right: 0;
+        width: 100vw;
+        height: 100%;
+        background: #ffffff00;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    
+    .nav-list li {
+        margin-left: 20%;
+        opacity: 0;
+    }
+    
+    .nav-list li a {
+        font-weight: 500;
+    }
+
+    .nav-list li a:hover {
+        border-bottom: 1px solid rgb(253, 253, 253);
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        background: #9E050B;
+        transform: translateX(0);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* Tirar o input search */
+
+@media(max-width:923px) {
+    .search-container {
+        display: none;
+    }
+
+    .containerLinks li {
+        display: inline-block;
+    }
+}
+
+/* Responsividade Section 1 */
+
+@media(min-width:320px) {
+
+    .section1-paragrafo {
+        margin-top: 3em;
+    }
+}
+
+/* Responsividade Formulário */
+@media(max-width:360px){
+    .section5 .inputs-form{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .section5 textarea{
+        width: 50%;
+    }
+}
+
+/* Responsividade Footer */
+
+@media(max-width:895px) {
+
+    footer .direitosReservados h6 {
+        font-size: 0.6rem;
+    }
+
+    footer .termos a {
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:416px) {
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2px;
+    }
+
+    footer .direitosReservados h6 {
+        font-size: 6px;
+    }
+
+    footer .termos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    footer .termos a {
+        font-size: 0.5rem;
+    }
+
+    footer .contatos {
+        display: flex;
+        gap: 0.2rem;
+    }
+
+}
